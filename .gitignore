@@ -1,0 +1,26 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore Python bytecode cache folders
+__pycache__/
+
+# Ignore virtual environment folders (commonly named 'env' or 'venv')
+venv/
+
+# Ignore Django migration files, except for __init__.py
+# Ignore database files
+**/migrations/*
+!**/migrations/__init__.py
+*.sqlite3
+*.pyc
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+
+# Ignore environment-specific settings
+.env
+
+# Ignore any local development configuration files
+*.local
+*.db.sqlite3
