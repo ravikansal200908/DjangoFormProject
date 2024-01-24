@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "app1_simple_form"
+    "app1_simple_form",
+    "app2_custom_template",
 ]
 
 MIDDLEWARE = [

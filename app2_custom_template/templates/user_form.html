@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>User</title>
+</head>
+
+<body>
+    <h3>This is user form page.</h3>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% for field in form %}
+        <div class="fieldWrapper">
+            {{ field.errors }}
+            {{ field.label_tag }} {{ field }}
+            <!-- {% if field.help_text %} -->
+            <!-- <p class="help" id="{{ field.auto_id }}_helptext"> -->
+            <!-- {{ field.help_text|safe }} -->
+            <!-- </p> -->
+            <!-- {% endif %} -->
+            <p></p>
+        </div>
+        {% endfor %}
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

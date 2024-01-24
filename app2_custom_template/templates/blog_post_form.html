@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Blog</title>
+</head>
+
+<body>
+    <h3>This is blog post page.</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="blogPostForm">
+            {% for field in form %}
+            <div class="formField">
+                {{ field.label_tag }}: {{ field }}
+                {% if field.errors %}
+                <span class="error">{{ field.errors|striptags }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

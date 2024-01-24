@@ -1,3 +1,13 @@
-Need of django form?
-What is bound and unbound form?
-What is use of novalidate attribute?
+- Need of django form?
+- What is bound and unbound form?
+- What is use of novalidate attribute?
+- Expected output for below code?
+    >>> from django import forms
+    >>> f = forms.CharField()
+    >>> f.clean("foo")
+    'foo'
+    >>> f.clean("")
+- Use of form.cleaned_data() method. Can i call it before form.is_valid() ?
+- Can i call form.is_valid() multiple times?
+- Use of form clean method?
+- Confirm clean method is called after the individual field cleaning methods, Yes or No?
