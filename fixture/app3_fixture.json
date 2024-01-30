@@ -1,0 +1,227 @@
+[
+    {
+        "model": "app3_model_form.category",
+        "pk": 56,
+        "fields": {
+            "name": "Electronics",
+            "is_delete": false,
+            "description": "Electronic products",
+            "image": ""
+        }
+    },
+    {
+        "model": "app3_model_form.category",
+        "pk": 57,
+        "fields": {
+            "name": "Clothing",
+            "is_delete": false,
+            "description": "Clothing items",
+            "image": ""
+        }
+    },
+    {
+        "model": "app3_model_form.category",
+        "pk": 58,
+        "fields": {
+            "name": "Books",
+            "is_delete": false,
+            "description": "Books and literature",
+            "image": ""
+        }
+    },
+    {
+        "model": "app3_model_form.category",
+        "pk": 59,
+        "fields": {
+            "name": "Home Appliances",
+            "is_delete": false,
+            "description": "Appliances for home",
+            "image": ""
+        }
+    },
+    {
+        "model": "app3_model_form.category",
+        "pk": 60,
+        "fields": {
+            "name": "Toys",
+            "is_delete": false,
+            "description": "Children's toys",
+            "image": ""
+        }
+    },
+    {
+        "model": "app3_model_form.product",
+        "pk": 6,
+        "fields": {
+            "name": "Laptop",
+            "is_delete": false,
+            "description": "Powerful laptop",
+            "image": "",
+            "category": 56
+        }
+    },
+    {
+        "model": "app3_model_form.product",
+        "pk": 7,
+        "fields": {
+            "name": "T-shirt",
+            "is_delete": false,
+            "description": "Comfortable T-shirt",
+            "image": "",
+            "category": 57
+        }
+    },
+    {
+        "model": "app3_model_form.product",
+        "pk": 8,
+        "fields": {
+            "name": "Python Programming Book",
+            "is_delete": false,
+            "description": "Learn Python programming",
+            "image": "",
+            "category": 58
+        }
+    },
+    {
+        "model": "app3_model_form.product",
+        "pk": 9,
+        "fields": {
+            "name": "Coffee Maker",
+            "is_delete": false,
+            "description": "Automatic coffee maker",
+            "image": "",
+            "category": 59
+        }
+    },
+    {
+        "model": "app3_model_form.product",
+        "pk": 10,
+        "fields": {
+            "name": "Toy Train Set",
+            "is_delete": false,
+            "description": "Children's toy train set",
+            "image": "",
+            "category": 60
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 1,
+        "fields": {
+            "customer_name": "John Doe",
+            "total_price": "1500.00",
+            "order_status": "Processed",
+            "products": [
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 2,
+        "fields": {
+            "customer_name": "John Doe",
+            "total_price": "1500.00",
+            "order_status": "Processed",
+            "products": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 3,
+        "fields": {
+            "customer_name": "Jane Smith",
+            "total_price": "800.00",
+            "order_status": "Pending",
+            "products": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 4,
+        "fields": {
+            "customer_name": "Bob Johnson",
+            "total_price": "3000.00",
+            "order_status": "Processed",
+            "products": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 5,
+        "fields": {
+            "customer_name": "Alice Brown",
+            "total_price": "500.00",
+            "order_status": "Canceled",
+            "products": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 6,
+        "fields": {
+            "customer_name": "Charlie White",
+            "total_price": "1200.00",
+            "order_status": "Pending",
+            "products": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 7,
+        "fields": {
+            "customer_name": "aa1111",
+            "total_price": "333.00",
+            "order_status": "Processed",
+            "products": [
+                6,
+                8
+            ]
+        }
+    },
+    {
+        "model": "app3_model_form.order",
+        "pk": 9,
+        "fields": {
+            "customer_name": "qww",
+            "total_price": "123.00",
+            "order_status": "Processed",
+            "products": [
+                7,
+                8,
+                9
+            ]
+        }
+    }
+]
