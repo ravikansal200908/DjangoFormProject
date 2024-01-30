@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Order</title>
+</head>
+
+<body>
+    <h2>Order Details</h2>
+    <p><strong>Customer Name:</strong> {{ order.customer_name }}</p>
+    <p><strong>Total Price:</strong> {{ order.total_price }}</p>
+    <p><strong>Order Status:</strong> {{ order.order_status }}</p>
+
+    <h3>Associated Products</h3>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.name }} - {{ product.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'app3:order_list' %}">Back</a>
+</body>
+
+</html>

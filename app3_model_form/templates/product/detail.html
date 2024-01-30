@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Product</title>
+</head>
+
+<body>
+    <h2>Product Details</h2>
+    <p><strong>Name:</strong> {{ product.name }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+
+    {% if product.image %}
+    <h3>Product Image</h3>
+    <img src="{{ product.image.url }}" alt="{{ product.name }} Image">
+    {% endif %}
+
+
+    <h3>Associated Category</h3>
+    <p><strong>Name:</strong> {{ category.name }}</p>
+    <p><strong>Description:</strong> {{ category.description }}</p>
+
+    <a href="{% url 'app3:product_list' %}">Back</a>
+</body>
+
+</html>

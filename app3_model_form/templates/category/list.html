@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Category</title>
+</head>
+
+<body>
+    <h2>Category List</h2>
+    <ul>
+        {% for category in categories %}
+        <li>
+            {{ category.name }} - {{ category.description }}
+            <a href="{% url 'app3:category_detail' pk=category.pk %}">View</a>
+            || <a href="{% url 'app3:category_update' pk=category.pk %}">Edit</a>
+            || <a href="{% url 'app3:category_delete' pk=category.pk %}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'app3:category_create' %}">Create New Category</a>
+    || <a href="{% url 'app3:home' %}">Home</a>
+
+</body>
+
+</html>

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     "app1_simple_form",
     "app2_custom_template",
+    "app3_model_form",
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,8 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+MEDIA_ROOT = BASE_DIR / "media"  # BASE_DIR should be defined in your settings
+
+# URL that handles the media served from MEDIA_ROOT
+MEDIA_URL = "/media/"

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Order</title>
+</head>
+
+<body>
+    <h2>Order List</h2>
+    <ul>
+        {% for order in orders %}
+        <li>
+            {{ order.customer_name }} - {{ order.total_price }} - {{ order.order_status }}
+            <a href="{% url 'app3:order_detail' pk=order.pk %}">View</a>
+            || <a href="{% url 'app3:order_update' pk=order.pk %}">Edit</a>
+            || <a href="{% url 'app3:order_delete' pk=order.pk %}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'app3:order_create' %}">Create New Order</a>
+    || <a href="{% url 'app3:home' %}">Home</a>
+
+</body>
+
+</html>

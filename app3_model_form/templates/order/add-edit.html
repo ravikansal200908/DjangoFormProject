@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Order</title>
+</head>
+
+<body>
+    <h2>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Order</h2>
+    <form method="post"
+        action="{% if form.instance.pk %}{% url 'app3:order_update' pk=form.instance.pk %}{% else %}{% url 'app3:order_create' %}{% endif %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+        <a href="{% url 'app3:order_list'%}">Back</a>
+    </form>
+</body>
+
+</html>

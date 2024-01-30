@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Product</title>
+</head>
+
+<body>
+    <h2>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Product</h2>
+    <form method="post" enctype="multipart/form-data"
+        action="{% if form.instance.pk %}{% url 'app3:product_update' pk=form.instance.pk %}{% else %}{% url 'app3:product_create' %}{% endif %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+        <a href="{% url 'app3:product_list'%}">Back</a>
+    </form>
+</body>
+
+</html>

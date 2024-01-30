@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Category</title>
+</head>
+
+<body>
+    <h2>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Category</h2>
+    <form method="post"
+        action="{% if form.instance.pk %}{% url 'app3:category_update' pk=form.instance.pk %}{% else %}{% url 'app3:category_create' %}{% endif %}"
+        enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+        <a href="{% url 'app3:category_list'%}">Back</a>
+    </form>
+</body>
+
+</html>
